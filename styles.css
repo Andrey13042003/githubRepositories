@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.app {
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.wrap {
+    width: 500px;
+}
+
+.select {
+    width: 100%; 
+    position: relative;
+}
+
+.select__input {
+    width: 465px;
+    border-bottom: none;
+    border: 1px solid ccc;
+    border-radius: 5px;
+    height: 46px;
+    display: flex;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.select__dropdown {
+    position: absolute;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    top: 46px;
+    left: 0;
+    right: 0;
+    max-height: 265px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, .3);
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.select__list {
+    position: relative;
+    top: 270px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+.select__item {
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.select__li {
+    position: relative;
+    border: 1px solid black;
+    height: 101px;
+    background-color: #E27BEB;
+    width: 100%;
+    padding: 5px;
+}
+
+.close {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    position: absolute;
+    bottom: 40px;
+    left: 440px;
+}
+
+.close::after, .close::before{
+    position: absolute;
+    bottom: -3px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    cursor: pointer;
+    background-color: #333;
+}
+
+.close:before {
+    transform: rotate(45deg);
+  }
+.close:after {
+    transform: rotate(-45deg);
+  }
+
+.select__item:hover {
+    background-color: #eee;
+    cursor: pointer;
+    transition: all 300ms;
+}
